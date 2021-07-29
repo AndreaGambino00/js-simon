@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://www.neonspiele.de/uploaded/thumb/simonsays200.jpg');
+    background-size: cover;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100px;
+   text-align: center;
+   margin-top: 300px;
+}
+
+#perso {
+    color: red;
+}
+
+#uno, #due, #tre, #quattro {
+    color: orange;
+}
+
+#vinto {
+    color: green;
+}
+
+
+

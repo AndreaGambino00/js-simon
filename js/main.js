@@ -28,10 +28,16 @@ function richiesta() {
   console.log(numeriUtente);
 
   if (numeriUtente.length == 0) {
-    console.log('Hai Perso')
+    document.getElementById('perso').innerHTML = 'Hai Perso'
   } else if (numeriUtente.length == 1) {
-    console.log(' Hai indovinato un solo numero ed è: ' + numeriUtente)
-  } else if (numeriUtente.length == 5) {
-    console.log('Hai Vinto! I numeri erano: ' + numeriUtente)
+    document.getElementById('uno').innerHTML = (' Hai indovinato un solo numero ed è: ' + numeriUtente)
+  }else if (numeriUtente.length == 2) {
+    document.getElementById('uno').innerHTML = (' Hai indovinato due numeri e sono: ' + numeriUtente)
+  }else if (numeriUtente.length == 3) {
+    document.getElementById('uno').innerHTML = (' Hai indovinato tre numeri e sono: ' + numeriUtente)
+  }else if (numeriUtente.length == 4) {
+    document.getElementById('uno').innerHTML = (' Hai indovinato quattro numeri e sono: ' + numeriUtente)
+  }else if (numeriUtente.length == 5) {
+    document.getElementById('vinto').innerHTML = ('Hai Vinto! I numeri erano: ' + numeriUtente)
   } 
 };
